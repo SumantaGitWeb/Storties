@@ -1,0 +1,36 @@
+*::selection{
+    background-color: #81bcff;
+    color: currentColor;
+}
+
+
+.Mochi{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.Dongle{
+    font-family: 'Dongle', sans-serif;
+}
+
+.link{
+    position: relative;
+}
+
+.link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #059669;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
